@@ -13,3 +13,8 @@ SPI pins differ depending on Arduino type.
 | Mega | 52 | 50 | 51 | 53|
 
 ![Alt text](./image.png)
+
+For Arduino library Download **link**
+
+
+https://www.sparkfun.com/datasheets/Components/SMD/nRF24L01Pluss_Preliminary_Product_Specification_v1_0.pdf
