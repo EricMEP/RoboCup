@@ -1,0 +1,23 @@
+/* Credit to RF24 and Dejan Nedelkovski
+Further information https://github.com/nRF24/RF24
+*/
+
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+RF24 radio(7,8); // Pin CE & CSN
+
+const byte address[6] = "00001;   // address name OR Pipe  
+
+void setup() {
+radio.begin();
+radio.openWritingPipe(address);  // send data
+radio.setPALevel(RF24_PA_MIN);   // Signal amplifier level
+radio.stopListening();
+}
+
+void loop() {
+const char text[] = "";
+radio.write(&text, sizeof(text));
+delay();
+}
